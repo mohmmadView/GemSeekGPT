@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const DEEPSEEK_API_URL = "https://api.deepseek.com";
-const DEEPSEEK_API_KEY = "sk-82792f8c12774604ba7bac7fb3defbb0";
+const DEEPSEEK_API_KEY = "Api-key-Deep";
 
 export const sendMessageDeepSeek = async (message) => {
   try {

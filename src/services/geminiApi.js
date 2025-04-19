@@ -1,7 +1,7 @@
 import axios from "axios";
-
+const Api_Key= process.env.OPEN_API_KEY;
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash`;
-const GEMINI_API_KEY = "AIzaSyBxbezoISt3YHcz937swd1Q7UPy01JJwWY";
+const GEMINI_API_KEY = "Api-Key";
 
 export const sendMessageGemini = async (message) => {
   try {
