@@ -9,7 +9,7 @@ const ChatInterface = () => {
   const { messages, handleSendMessage, selectedApi, handleApiChange } = useChat();
 
   return (
-    <div className="flex flex-col h-screen bg-gray-100 p-6 font-robot">
+    <div className="flex flex-col h-screen bg-black p-6 font-robot">
       <div className="flex justify-center mb-4">
         <RobotAvatar />
       </div>

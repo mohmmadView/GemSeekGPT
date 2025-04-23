@@ -1,7 +1,9 @@
 import axios from "axios";
 
+
 const CHATGPT_API_URL = "https://api.openai.com/v1/chat/completions";
-const CHATGPT_API_KEY ="ّapi-Key";  // api - open Ai
+const CHATGPT_API_KEY =import.meta.env.VITE_OPENAI_API_KEY  // api - open Ai
+console.log(CHATGPT_API_KEY);
 
 export const sendMessageChatGPT = async (message) => {
   try {

@@ -21,7 +21,7 @@ const InputArea = ({ onSendMessage }) => {
   };
 
   return (
-    <div className="mt-4 flex items-center">
+    <div className="mt-4 flex text-black bg-amber-700 items-center">
       <textarea
         value={inputText}
         onChange={handleInputChange}
