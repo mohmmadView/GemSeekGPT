@@ -43,22 +43,21 @@ maxBodyLength: Infinity,
   data : data
 };
 
-axios(config)
-.then((response) => {
-  console.log(JSON.stringify(response.data));
-})
-.catch((error) => {
-  console.log(error);
-});
-console.log(DEEPSEEK_API_KEY);
- let apiClient =  axios.create({
-       baseURL: DEEPSEEK_API_URL,
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${DEEPSEEK_API_KEY}`,
-        },
-      })
-console.log(axios);
+// axios(config)
+// .then((response) => {
+//   console.log(JSON.stringify(response.data));
+// })
+// .catch((error) => {
+//   // console.log(error);
+// });
+//  let apiClient =  axios.create({
+//        baseURL: DEEPSEEK_API_URL,
+//         headers: {
+//           "Content-Type": "application/json",
+//           Authorization: `Bearer ${DEEPSEEK_API_KEY}`,
+//         },
+//       })
+// console.log(axios);
 
 export const sendMessageDeepSeek = async (endpoint, params = {}) => {
   try {

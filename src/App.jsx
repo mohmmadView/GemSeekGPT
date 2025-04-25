@@ -5,7 +5,7 @@ import './styles/index.css';
 
 function App() {
   return (
-    <div className="container w-6/12 mx-auto  h-screen">
+    <div className="  mx-0 flex justify-center w-screen  h-screen">
       <ChatInterface />
     </div>
   );

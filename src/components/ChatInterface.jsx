@@ -9,17 +9,17 @@ const ChatInterface = () => {
   const { messages, handleSendMessage, selectedApi, handleApiChange } = useChat();
 
   return (
-    <div className="flex flex-col h-screen bg-black p-6 font-robot">
+    <div className="flex box flex-col has-background-primary-dark	 w-10/12   my-6 p-2 font-robot">
       <div className="flex justify-center mb-4">
         <RobotAvatar />
       </div>
       <ApiSelector selectedApi={selectedApi} onApiChange={handleApiChange} />
-      <div className="flex-grow overflow-y-auto mb-4">
+      <div className=" flex-grow overflow-y-auto mb-4 h-8/12 ">
         {messages.map((message, index) => (
           <MessageBubble key={index} message={message} />
         ))}
       </div>
-      <InputArea onSendMessage={handleSendMessage} />
+      <InputArea className="w-full" onSendMessage={handleSendMessage} />
     </div>
   );
 };

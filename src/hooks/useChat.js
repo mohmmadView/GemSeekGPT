@@ -5,7 +5,7 @@ import { sendMessageChatGPT } from "../services/chatgptApi";
 
 const useChat = () => {
   const [messages, setMessages] = useState([]);
-  const [selectedApi, setSelectedApi] = useState("deepseek"); // پیش‌فرض DeepSeek
+  const [selectedApi, setSelectedApi] = useState("gemini"); // پیش‌فرض DeepSeek
 
   const handleSendMessage = useCallback(
     async (newMessage) => {

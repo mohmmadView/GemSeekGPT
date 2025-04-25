@@ -21,20 +21,24 @@ const InputArea = ({ onSendMessage }) => {
   };
 
   return (
-    <div className="mt-4 flex text-black bg-amber-700 items-center">
-      <textarea
+    <div className="  field has-addons  mt-4 ">
+      <div className="control is-expanded">
+        <input
         value={inputText}
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
         placeholder="پیام خود را بنویسید..."
-        className="w-full p-3 rounded-md border robot-border focus:outline-none focus:ring-2 focus:ring-robot-blue font-robot resize-none h-12"
-      />
+        className="input is-primary is-fullwidth "
+        />
+      </div>
+      <div className="control">
       <button
         onClick={handleSendMessageClick}
-        className="ml-2 p-3 rounded-md bg-robot-blue text-white font-bold focus:outline-none focus:ring-2 focus:ring-robot-blue robot-shadow"
+        className="button is-primary "
       >
         ارسال
       </button>
+      </div>
     </div>
   );
 };

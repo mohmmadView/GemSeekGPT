@@ -13,7 +13,7 @@ import React from 'react';
  */
 const ApiSelector = ({ selectedApi, onApiChange }) => {
   return (
-    <div className="flex p-3 font-semibold justify-center bg-emerald-200 space-x-4 mb-4">
+    <div className="flex p-3 font-semibold justify-center text-amber-50 bg-amber-800 space-x-4 mb-4">
       <label className="flex items-center space-x-2">
         <input
           type="radio"
